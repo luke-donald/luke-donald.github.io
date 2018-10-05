@@ -1,0 +1,159 @@
+.grid {
+	/*border: 3px black double;*/
+	display: grid;
+	width: 1000px;/*800px;*/
+
+	font-family: Calibri;
+
+	grid-gap: 15px;
+  	background-color: white;
+  	padding: 10px;
+
+	grid-template-areas:
+	'header header header header'
+	'sidebar bio bio bio'
+    'sidebar work work work'
+    'sidebar edu edu edu'
+    'sidebar skill skill skill';
+
+    margin-left: 120px;
+}
+
+.headerborder{
+	border: 1px solid white;
+	padding: 10px 65px;
+	color:white;
+	text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkred;
+  grid-column: 1 / -1;
+
+  grid-area: header;
+  
+  height: 150px;
+  width: 100%;/*1000px;*/
+
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+
+.profilepic{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	margin-right: 8px;
+
+}
+
+.Sidebar{
+	grid-area: sidebar;
+	background-color: lightgrey;
+	z-index: 0;
+	padding-left: 10px;
+	margin-left: 60px;
+}
+
+
+
+.Biography{
+	grid-area: bio;
+	margin-top: -20px;
+	margin-right: 40px;
+	padding-left:5px;
+}
+
+.Work_Experience{
+	grid-area: work;
+	width: 700px;
+	position: relative;
+	margin-right: 40px;
+	padding-left: 5px;
+	/*display: flex;*/
+}
+
+.job, .degree{
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+
+.job_desc, .degree_desc{
+	float:right;
+}
+
+.job_date, .degree_date{
+	float:left;
+	width:170px;
+}
+
+
+.Education{
+	grid-area: edu;
+	margin-right: 40px;
+	padding-left: 5px;
+}
+
+.Skills_Expertise{
+	grid-area: skill;
+	margin-right: 40px;
+	padding-left: 5px;
+}
+
+hr{
+	border-top: 3px solid lightgrey;
+	margin-bottom: 10px;
+	margin-right: 45px;
+}
+
+.hr_social{
+	border-top: 3px solid #4f4d4d;
+	margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    float: center;
+}
+
+li:before {
+  content: "• ";
+}
+
+h1{
+	font-family: Lato;
+}
+
+h2{
+	font-family: Georgia;
+	font-size:30px;
+}
+
+h3{
+	font-family: Rockwell;
+}
+
+.Sidebar h2{
+	font-size: 20px;
+}
+
+.icon{
+	width: 15px;
+	height: auto;
+	padding-right: 5px;
+}
+
+.contact_detail, .social_detail{
+	display: inline-block;
+}
